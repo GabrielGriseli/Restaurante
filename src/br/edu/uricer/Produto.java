@@ -1,32 +1,30 @@
 package br.edu.uricer;
 
+import java.math.BigDecimal;
+
 public class Produto {
     
-    private String nome;
-    private int quantidade;
-    private int valor;
+    private String descricao;
+    private BigDecimal preco;
 
-    public String getNome() {
-        return nome;
+    public Produto(String descricao, BigDecimal preco) {
+        this.descricao = descricao;
+        this.preco = preco;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public int getQuantidade() {
-        return quantidade;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+    public BigDecimal getPreco() {
+        return preco;
     }
 
-    public int getValor() {
-        return valor;
-    }
-
-    public void setValor(int valor) {
-        this.valor = valor;
+    public void setPreco(BigDecimal preco) {
+        this.preco = preco;
     }
 }
